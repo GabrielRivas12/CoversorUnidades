@@ -6,10 +6,8 @@ body {
     background-color: #0b0c69;
     background-image: url('109220182_p0.png');
     background-size: cover;
-    
-    
-    
-    
+    background-position: center; /* Asegura que la imagen esté centrada */
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -20,16 +18,16 @@ h1 {
 }
 
 .converter {
-    max-width: 400px;
+    max-width: 400px; /* Puede ser ajustado para adaptarse a diferentes tamaños de pantalla */
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: rgba(208, 211, 214, 0.5); /* Cambiar el último valor (0.5) para ajustar la transparencia */
+    background-color: rgba(208, 211, 214, 0.5);
+    display: flex;
+    flex-direction: column; /* Utiliza Flexbox para estructura flexible */
+    align-items: center;
 }
-
-
-
 
 label, select, input, button {
     display: block;
@@ -37,13 +35,13 @@ label, select, input, button {
 }
 
 input[type="number"] {
-    width: 100%;
+    width: 100%; /* Mantener ancho completo */
     padding: 8px;
     box-sizing: border-box;
 }
 
 button {
-    width: 100%;
+    width: 100%; /* Ancho completo para asegurar compatibilidad con móviles */
     padding: 10px;
     background-color: #007bff;
     color: #fff;
@@ -61,25 +59,34 @@ button:disabled {
     cursor: not-allowed;
 }
 
-/* Estilos generales */
-
-/* Estilos para dispositivos con un ancho máximo de 768px (tabletas y dispositivos móviles) */
+/* Estilos para dispositivos con un ancho máximo de 768px */
 @media screen and (max-width: 768px) {
-    
-        background-image: url('109220182_p0.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; /* Ajustar la posición de la imagen */
+    .converter {
+        padding: 10px; /* Reducir padding en dispositivos pequeños */
+        max-width: 100%; /* Ancho completo para pantallas pequeñas */
+    }
+
+    label, select, input, button {
+        font-size: 14px; /* Disminuir tamaño de fuente */
+    }
+
+    input[type="number"] {
+        padding: 6px; /* Reducir padding para dispositivos pequeños */
+    }
 }
 
-}
-
-/* Estilos para dispositivos con un ancho mínimo de 768px y un máximo de 1024px (tabletas en modo horizontal y pantallas más pequeñas) */
+/* Estilos para dispositivos con un ancho mínimo de 768px y un máximo de 1024px */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    /* Estilos específicos para tabletas en modo horizontal y pantallas más pequeñas */
+    .converter {
+        padding: 15px; /* Ajustar padding para dispositivos medianos */
+        max-width: 600px; /* Ajustar ancho para dispositivos medianos */
+    }
 }
 
-/* Estilos para dispositivos con un ancho mínimo de 1024px (pantallas más grandes como computadoras de escritorio) */
+/* Estilos para dispositivos con un ancho mínimo de 1024px */
 @media screen and (min-width: 1024px) {
-    /* Estilos específicos para pantallas más grandes como computadoras de escritorio */
+    .converter {
+        padding: 20px; /* Ajustar padding para dispositivos grandes */
+        max-width: 800px; /* Mayor ancho para pantallas más grandes */
+    }
 }
