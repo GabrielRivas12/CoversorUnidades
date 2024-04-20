@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0b0c69;
+    background-image: url('109220182_p0.png');
+    background-size: cover;
+    
+    
+    
+    
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: "Arial";
+    text-shadow: 1px 1px 1px black;
+}
+
+.converter {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(208, 211, 214, 0.5); /* Cambiar el último valor (0.5) para ajustar la transparencia */
+}
+
+
+
+
+label, select, input, button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Estilos generales */
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tabletas y dispositivos móviles) */
+@media screen and (max-width: 768px) {
+    /* Estilos específicos para dispositivos móviles y tabletas */
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 768px y un máximo de 1024px (tabletas en modo horizontal y pantallas más pequeñas) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas en modo horizontal y pantallas más pequeñas */
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 1024px (pantallas más grandes como computadoras de escritorio) */
+@media screen and (min-width: 1024px) {
+    /* Estilos específicos para pantallas más grandes como computadoras de escritorio */
+}

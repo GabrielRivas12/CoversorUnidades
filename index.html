@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+    <h1>Conversor de Unidades</h1>
+    <div class="converter">
+        <label for="category">Seleccione la categoría:</label>
+        <select id="category" onchange="updateUnits()">
+            <option value="length">Longitud</option>
+            <option value="weight">Peso</option>
+            <option value="temperature">Temperatura</option>
+            <option value="volume">Volumen</option>
+        </select>
+
+        <label for="inputUnit">Unidad de entrada:</label>
+        <select id="inputUnit"></select>
+        <input type="number" id="inputValue" placeholder="Valor a convertir">
+
+        <label for="outputUnit">Unidad de salida:</label>
+        <select id="outputUnit"></select>
+        <input type="number" id="outputValue" placeholder="Resultado" disabled>
+
+        <button onclick="convertir()">Convertir</button>
+    </div>
+
+    <script src="backend.js"></script>
+</body>
+</html>
