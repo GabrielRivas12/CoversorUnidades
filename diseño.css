@@ -65,7 +65,14 @@ button:disabled {
 
 /* Estilos para dispositivos con un ancho máximo de 768px (tabletas y dispositivos móviles) */
 @media screen and (max-width: 768px) {
-    /* Estilos específicos para dispositivos móviles y tabletas */
+    body {
+        background-image: url('imagen-movil.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; /* Ajustar la posición de la imagen */
+    }
+}
+
 }
 
 /* Estilos para dispositivos con un ancho mínimo de 768px y un máximo de 1024px (tabletas en modo horizontal y pantallas más pequeñas) */
@@ -77,3 +84,4 @@ button:disabled {
 @media screen and (min-width: 1024px) {
     /* Estilos específicos para pantallas más grandes como computadoras de escritorio */
 }
+
